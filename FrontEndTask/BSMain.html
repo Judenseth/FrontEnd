@@ -1,8 +1,14 @@
 ﻿<!DOCTYPE html>
+<!-- Credit to -->
+<!--  https://get.foundation/sites/docs/equalizer.html-->
+<!--  https://getbootstrap.com/docs/5.1/components/carousel/-->
+<!--  https://developer.mozilla.org/en-US/docs/Web/CSS/animation-->
+<!--  https://dracos.github.io/foundation-sites/components/orbit.html-->
 <!-- Lets  allow the use of CSS to style JavaScript-free page-->
 <html class="no-js" lang="en" style="height: 100%;"> 
 
 <head>
+  
     <!--Create a style sheet to style and layout this page to showcase you skills. Look for additional comments as a guide-->
     <meta charset="utf-8" />
       <meta name="description" content="Project">
@@ -44,12 +50,25 @@
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.owlcarousel/1.3.2/owl.theme.min.css"/>
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.owlcarousel/1.3.2/owl.transitions.min.css"/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.owlcarousel/1.3.2/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/0.8.0/viewer.min.css">
     <link rel="stylesheet" href="https://www.google.com/cse/style/look/default.css" type="text/css" />
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicons/apple-touch-icon-144x144-precomposed.png">
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicons/apple-touch-icon-114x114-precomposed.png">
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/apple-touch-icon-72x72-precomposed.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <title>Foundation Docs: Right-to-Left Support</title>
+    <link rel="stylesheet" href="/foundation-sites/assets/normalize.css" />
+    <link rel="stylesheet" href="/foundation-sites/assets/docs.css" />
+    <script src="/foundation-sites/assets/vendor/custom.modernizr.js"></script>
     <!-- Let's hook up CSS -->
     <link rel="stylesheet" href="css/orbit.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.owlcarousel/1.3.2/owl.carousel.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/foundation/5.5.3/js/foundation.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/dataTables.foundation.min.js"></script>
@@ -57,40 +76,73 @@
     <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.0.2/js/responsive.foundation.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.owlcarousel/1.3.2/owl.carousel.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/history.js/1.8.0b2/history.adapter.jquery.js"></script>
+    <!-- Let's add jQuery and the Orbit plug-in -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.orbit.min.js" type="text/javascript"></script>
+    <!-- let's activate the Orbit plug-in-->
+    <!-- Resizing the browser size-->
+    <script>
+      $(document).foundation('orbit');
+      $(window).resize();
+    </script>
+    <script>
+      $(document).on('opened', '[data-reveal]', function () {
+      var modal = $(this);
+      $(window).trigger('resize');
+      });
+      </script>
+      <script>$(document).foundation({
+        orbit: {
+          animation: 'slide-show',
+          timer_speed: 1000,
+          pause_on_hover: true,
+          animation_speed: 500,
+          navigation_arrows: true,
+          bullets: false
+        }
+      });
+      </script>
    
-
-
 
     <title>What Can You Do</title>
 </head>
-<hr>
-
-<body class style= " position: relative; min-height: 100%; top: 0px; background-color:#DEEFFF; align-items: center; margin-bottom: 100px; padding: 1.5em; font-family: Georgia, 'Times New Roman', Times, serif;font-size: 0.85em; position:relative; height: 100vh; top: 0px">
-
-  <!-- Page contain View Set up-->
-  <div class="large-12 columns" style="background-color:#DEEFFF; align-items: center; margin-bottom: 75px; padding: 1.5em; font-size: 0.85em; position:relative; height: 100%; top: 0px" >
-    <h2 class='content-headers' style="color:rgb(0, 107, 179); font-family: 'Times New Roman', Times, serif;">Business Services</h2>
-    <h3 class="subheader" style="color: black;">The Department of State Business Services Division maintains Rhode Island’s state business registry. While we record new business formations and ongoing business registration activity, we also provide thoughtful guidance and comprehensive services to those looking to start and maintain a business or non-profit in Rhode Island.</h3>
+<div class=" antialiased off-canvas hide-extras off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="top-bar hide-for-small">
+      <ul class="title-area" style="background-color: blue; font-family: 'Times New Roman', Times, serif; box-shadow: 0 9px #999;">
+        <!-- Title Area-->
+        <li class="name">
+          <h1><a href="/">Click Me</a></h1>
+        </li>
+      </ul>
+    </nav>
+<body class=" background-color:whitesmoke; align-items: center; margin-bottom: 100px; padding: 1.5em; font-family: Georgia, 'Times New Roman', Times, serif;font-size: 0.85em; position:relative; height: 100vh; top: 0px">
+  <!-- Page contain View Set up--> 
+  <div class="Large-12 columns" >
+    <h2 class='content-headers' style="font-family: 'Times New Roman', Times, serif; color: dodgerblue;">Business Services</h2>
+    <h3 class="subheader" style="color: black; font-family: 'Times New Roman', Times, serif;">The Department of State Business Services Division maintains Rhode Island’s state business registry. While we record new business formations and ongoing business registration activity, we also provide thoughtful guidance and comprehensive services to those looking to start and maintain a business or non-profit in Rhode Island.</h3>
 	<hr>
+  <div class="row">
   <div class="thinpanel">
     <div data-alert class="alert" style="background-color:sandybrown;">
-	<h5><span class="fa fa-exclamation-circle" style="color: darkred;"></span>
+	<h5><span class="fa fa-exclamation-circle" style="color: darkred; size:inherit"></span>
     <span class="msg"><strong> BUSINESS ALERT: Certificates of Good Standing  - ALERTA EMPRESARIAL Certificados de Buen Estado Corporativo</strong></span>
-     </h5>
-    <p>Be wary of any private company sending solicitations or demanding a response to obtain a certificate of good standing on your behalf for an exorbitant fee.&nbsp; If your business requires a certificate of good standing to complete a business transaction, please contact our office directly at <b>401-222-3040</b> or order online <a href="https://www.sos.ri.gov/divisions/business-services/order-certificates">here</a>.</p>
+     </h5></div>
+    <p>Be wary of any private company sending solicitations or demanding a response to obtain a certificate of good standing on your behalf for an exorbitant fee.&nbsp; If your business requires a certificate of good standing to complete a business transaction, please contact our office directly at <b>401-222-3040</b> or order online <a href="https://www.sos.ri.gov/divisions/business-services/order-certificates"><strong>here</strong></a>.</p>
 	
-    <p>Desconfíe de cualquier empresa privada que le envíe solicitudes o exija una respuesta para obtener un Certificado de Buen Estado Corporativo a su nombre por una tarifa exorbitante. Si su negocio requiere un Certificado de Buen Estado Corporativo para completar una transacción comercial, por favor comuníquese con nuestra oficina directamente al <b>401-222-3040</b> o solicite por internet <a href="https://www.sos.ri.gov/divisions/business-services/order-certificates">aquí</a>. </p>
+    <p>Desconfíe de cualquier empresa privada que le envíe solicitudes o exija una respuesta para obtener un Certificado de Buen Estado Corporativo a su nombre por una tarifa exorbitante. Si su negocio requiere un Certificado de Buen Estado Corporativo para completar una transacción comercial, por favor comuníquese con nuestra oficina directamente al <b>401-222-3040</b> o solicite por internet <a href="https://www.sos.ri.gov/divisions/business-services/order-certificates"><strong>aquí</strong> </a>. </p>
     <hr>
 </div>
-    </div>
-    
-<div class="row">
- <div class="columns large-12 columns">  
-<div class="columns large-4 columns"> 
-      <div class="panel listing" style="background-color:#ddd" text-align: center;>
-          <!--Change all links in this section to point to google search page but levae the display names as they are DONE!!!-->
-        <h4><strong>Quick Links</strong></h4>
-        <ul class="disc">
+    </div>  
+     <!--Change all links in this section to point to google search page but levae the display names as they are DONE!!!-->
+      <!-- Absolute URLs Solution--> 
+    <div class="row">
+ <div class= "Large-12 columns" style: box-shadow: 0 9px #999;>
+   <div class=" columns large-4 columns"> 
+      <div class="docs section-container;">
+        <section class="section"> 
+        <h3 class="content-headers" style="color: black"><strong>Quick Links</strong></h3><hr> 
+        <ul class="square">
           <li><a href="https://www.google.com/" target="_blank">File a Business Annual Report</a></li>
 			    <li><a href="https://www.google.com/" target="_blank">File a Non-Profit Annual Report</a></li>
           <li><a href="https://www.google.com/" target="_blank">Check Filing Status</a></li>
@@ -103,39 +155,44 @@
 				  <li><a href="https://www.google.com/" target="_blank">One-Day Marriage Officiant Certification</a></li>
         </ul>
       </div>
-    </div>	 
-  <div class="columns large-4 columns" >
+    </div></section>
+  <div class="large-4 columns" >
     <!--Create a slideshow for this section utilizing the images provided in the images direcotry included as part of the project-->
     <!--Change all links in this section to point to any site of your choosing-->
+    <!-- Let's load all the JPG first-->
     <div class="orbit-container">
-	    <ul data-orbit class="orbit-slides-container" style="height: 250px;" data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out"> 
-        <li class style="z-index: 2; margin-left: 100%;"><a href="https://www.sos.ri.gov/divisions/business-services/covid-19-modified-operations" target="_blank">
+	    <ul data-orbit class="orbit-slides-container" data-option="animation: slide; pause_on_hover:true; animation_speed:500; navigation_arrows:true;bullets:false;" style="height: 250px; position: relative;"> 
+        <li class style="z-index: 2; margin-left: 100%;background-color:darkseagreen; font-family: 'Times New Roman', Times, serif;"><a href="https://www.sos.ri.gov/divisions/business-services/covid-19-modified-operations" target="_blank">
           <img src="Images/covid-in-person.jpg" alt="Covid 19 Modified Operations" title="Covid 19 Modified Operations"></a>
           <div class="table caption">Covid 19 Modified Operations</div></li>               
-        <li class="active" style="z-index: 4; margin-left: 0%;"><a href="https://risosbusiness.reframeengage.com" target="_blank">
+        <li class="active" style="z-index: 4; margin-left: 0%; background-color:darkseagreen; font-family: 'Times New Roman', Times, serif; position: relative;"><a href="https://risosbusiness.reframeengage.com" target="_blank">
           <img src="Images/virtual-hours-image.jpg" alt="Virtual Office Hours" title="Virtual Office Hours"></a>
           <div class="table caption">Click the picture above to make an appointment!</div></li>   
-        <li class style="z-index: 2; margin-left: 100%;"><a href="https://www.sos.ri.gov/divisions/business-services/center-stage-program"target="_blank">
+        <li class style="z-index: 2; margin-left: 100%; background-color:darkseagreen; font-family: 'Times New Roman', Times, serif;"><a href="https://www.sos.ri.gov/divisions/business-services/center-stage-program"target="_blank">
           <img src="Images/center-stage-image.jpg" alt="Celebrating Rhode Island's Business Community" title="Celebrating Rhode Island's Business Community"></a>
           <div class="table caption">Celebrating Rhode Island's Business Community</div></li>
-        <li class style="z-index: 2; margin-left: 100%;"><a href="https://www.sos.ri.gov/divisions/business-services/applying-for-sba-loan"  target="_blank">
-          <img src="Images/sba-loan-help-image.png" alt="Applying for a Small Business SBA Loan, We can help!" title="Applying for a Small Business SBA Loan, We can help!"></a>
-          <div class="table caption">Applying for a Small Business Loan</div></li>
-        <li class style="z-index: 2; margin-left: 100%;"><a href="https://www.sos.ri.gov/divisions/notary-public/one-day-officiant/" target="_blank">
+        <li class style="z-index: 2; margin-left: 100%; background-color:darkseagreen; font-family: 'Times New Roman', Times, serif;"><a href="https://www.sos.ri.gov/divisions/notary-public/one-day-officiant/" target="_blank">
           <img src="Images/one-day-marriage-im.jpg" alt="One-Day Marriage Officiant Certification" title="One-Day Marriage Officiant Certification"></a>
           <div class="table caption">One-Day Marriage Officiant Certification</div> </li>
-        <li class style="z-index: 2; margin-left: 100%;"><a href="https://www.sos.ri.gov/divisions/business-services/business-basics/" target="_blank">
+      <li class style="z-index: 2; margin-left: 100%; background-color:darkseagreen; font-family: 'Times New Roman', Times, serif;"><a href="https://www.sos.ri.gov/divisions/business-services/applying-for-sba-loan"  target="_blank">
+          <img src="Images/sba-loan-help-image.png" alt="Applying for a Small Business SBA Loan, We can help!" title="Applying for a Small Business SBA Loan, We can help!"></a>
+          <div class="table caption">Applying for a Small Business Loan</div></li>
+        <li class style="z-index: 2; margin-left: 100%; background-color:darkseagreen; font-family: 'Times New Roman', Times, serif; text-align: center;"><a href="https://www.sos.ri.gov/divisions/business-services/business-basics/" target="_blank">
           <img src="Images/plan-a-business-image.png" alt="Planning a new business" title="Planning a new business"></a>
           <div class="table caption">Planning a new business</div></li>
-        </ul>
+        </ul><hr>
          <!-- Prev/Next Arrows -->
         <a href="#" class="orbit-prev"><span></span></a>
         <a href="#" class="orbit-next"><span></span></a>
         <!-- Timer and Play/Pause Button -->
         <div class="orbit-timer paused"><span></span>
-          <div class="orbit-progress" style="width: 15%;">
+          <div class="orbit-progress" style="width: 15%; animation: width 10s linear;">
           </div>
       </div>
+       <!--Slide Numbers Count -->
+       <div class="orbit-slide-number">
+        <span>1</span>/<span>6</span> 
+       </div>
       <!-- Orbit Bullet Slide Indicator -->
       <div class="orbit-bullets-container">
         <ol class="orbit-bullets">
@@ -147,28 +204,28 @@
           <li data-orbit-slide="5"class=></li>
         </ol>
       </div>
-  </div>
-</div>
-  <div class="columns large-4 columns"> 
+    </div>
+</div>	
+  <div class="small-4 columns">
+    
     <!--The first two links in this section can remain as they are. You can choose where the third link points DONE!!!--> 
 	  <div class="brightbluepanel">
-		<h4 class="content-headers"><a href="https://business.sos.ri.gov/corp/loginsystem/login_form.asp" target="_blank">File Online <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h4>
+		<h4 class="docs header">
+      <a href="https://business.sos.ri.gov/corp/loginsystem/login_form.asp" target="_blank">File Online <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h4>
 		<p>Use our electronic filing system to quickly file your corporate documents. Review our <a href="/divisions/business-services/refund-policy" target="_blank">refund policy</a>.</p>
 	  </div>
 		<div class="brightbluepanel">
-		<h4 class="content-headers"><a href="https://business.sos.ri.gov/CorpWeb/CorpSearch/CorpSearch.aspx" target="_blank">Search the Corporate Database <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h4>
+		<h4 class="docs header">
+      <a href="https://business.sos.ri.gov/CorpWeb/CorpSearch/CorpSearch.aspx" target="_blank">Search the Corporate Database <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h4>
 <p>Search active and inactive businesses registered with the RI Department of State. Our <a href="https://www.sos.ri.gov/divisions/business-services/search-assistance-corporate-database" target="_blank">Search Guide</a> provides helpful hints to make your search easier. </p>
 <p><a href="/divisions/business-services/what-information-can-we-provide" target="_blank">Learn more</a> about the information held by our office.</p>
       </div>
-</div>
-</div> 
-	</div>	
+    </div></div></div></div>	
 
-<div class="row">
- <div class="columns large-12 columns">  
+ <div class="large-12 columns">
+  <div class="row"> 
+	<h3 class='docs header'><strong>Start, maintain, or close your business or non-profit</strong></h3><hr>
 
-	<h2 class='content-headers'><strong>Start, maintain, or close your business or non-profit</strong></h2>
-<hr>
 </div></div>
 
 	  <div class="row" data-equalizer="foo">
@@ -177,7 +234,7 @@
     <div class="small-12 large-4 columns">  
    <div class="brightbluepanel"  data-equalizer-watch="foo">
 	   <a href="/divisions/business-services/ri-business/"><img style="PADDING-BOTTOM: 10px" src="Images/ri-business-images.png" alt="Rhode Island Business" title="Rhode Island Business">
-     <h3>For RI Businesses </span><i class="fa fa-arrow-right" aria-hidden="true"></i></a></h3>
+     <h3>For RI Businesses </span><i class="arrow right" style="text-align:center;"aria-hidden="true"></i></a></h3>
   <ul>
 	  <li><a href="/divisions/business-services/business-basics/" target="_blank">Plan for Success</a></li>
 	  <li><a href="/divisions/business-services/ri-business/start-your-rhode-island-business" target="_blank">Start a New Business</a></li>
@@ -191,7 +248,7 @@
     <div class="small-12 large-4 columns">    
         <div class="brightbluepanel"  data-equalizer-watch="foo">
 				<a href="/divisions/business-services/foreign-business/">   <img style="PADDING-BOTTOM: 10px" src="Images/foreign-business-image.png" alt="For Foreign Businesses" title="For Foreign Businesses">
-        <h3>For Foreign Businesses <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h3>
+        <h3>For Foreign Businesses <i class="arrow right" style="text-align:center;"aria-hidden="true"></i></a></h3>
    <ul>
 	  <li><a href="/divisions/business-services/foreign-business/business-basics" target="_blank">Plan for Success</a></li>
 	  <li><a href="/divisions/business-services/foreign-business/register-your-business-in-ri" target="_blank">Register Your Business in Rhode Island</a></li>
@@ -203,7 +260,7 @@
     <div class="small-12 large-4 columns">    
         <div class="brightbluepanel"  data-equalizer-watch="foo">
 			<a href="/divisions/business-services/non-profit/">	   <img style="PADDING-BOTTOM: 10px" src="Images/non-profit-image.png" alt="Rhode Island Non-Profit" title="Rhode Island Non-Profit">
-        <h3>For Non-Profits <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h3>
+        <h3>For Non-Profits <i class="arrow right" style="text-align:center;"aria-hidden="true"></i></a></h3>
       <ul>
 	  <li><a href="/divisions/business-services/non-profit/business-basics/">Plan for Success</a></li>
 	  <li><a href="/divisions/business-services/non-profit/start-a-non-profit-corporation" target="_blank">Start a New Non-Profit</a></li>
@@ -215,14 +272,14 @@
 
 <div class="row">
  <div class="columns large-12 columns">  	 
-<h3 class='content-headers' style="color: black;"><strong>Additional Resources</strong></h3>
+<h3 class='content-headers' style="color: black;"><strong>Additional Resources</strong></h3><hr>
 	</div></div>
 
 <div class="row" data-equalizer="foo">
     <!--Chage all the links in this section to point to vote.sos.ri.gov-->
 <div class="columns large-3 columns">    
   <div class="lightgraypanel"  data-equalizer-watch="foo">
-    <h3><a href="https://vote.sos.ri.gov">Rhode Island Business Data Hub <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h3>
+    <h3><a href="https://vote.sos.ri.gov">Rhode Island Business Data Hub <i class="arrow right" style="text-align:center;"aria-hidden="true"></i></a></h3>
    <p>Explore interactive data on the business landscape across the state.</p>
 	
    </div>
@@ -230,24 +287,24 @@
 
 <div class="columns large-3 columns">    
   <div class="lightgraypanel"  data-equalizer-watch="foo">
- <h3><a href="https://vote.sos.ri.gov">Trademarks and Service Marks <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h3>
+ <h3><a href="https://vote.sos.ri.gov">Trademarks and Service Marks <i class="arrow right" style="text-align:center;"aria-hidden="true"></i></a></h3>
    <p>Search our database of trademarks and service marks or learn how to register a new mark.</p>
   </div></div>
 
 <div class="columns large-3 columns">    
   <div class="lightgraypanel"  data-equalizer-watch="foo">
-        <h3><a href="https://vote.sos.ri.gov">Probate Forms <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h3>
+        <h3><a href="https://vote.sos.ri.gov">Probate Forms <i class="arrow right"style="text-align:center;" aria-hidden="true"></i></a></h3>
    <p>Access probate forms issued by the court.</p>
 </div></div>
  <div class="columns large-3 columns">    
   <div class="lightgraypanel"  data-equalizer-watch="foo">
-        <h3><a href="https://vote.sos.ri.gov">UCC <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h3>
+        <h3><a href="https://vote.sos.ri.gov">UCC <i class="arrow right" style="text-align:center;"aria-hidden="true"></i></a></h3>
    <p>Search or submit a Uniform Commercial Code filing.</p>
 	 </div></div></div>
-
-	<div class="row" data-equalizer="foo">	
-			 <div class="columns large-4 columns">
-<div class="brightbluepanel" data-equalizer-watch="foo">
+   
+   <div class="row" data-equalizer="foo">	
+     <div class="columns large-4 columns">
+<div class=  "brightbluepanel" data-equalizer-watch="foo">
 	  <h4 class="content-headers" style="color:black"> <strong>Filings</strong> </h4>
 <ul>
   <li><a href="https://docs.sos.ri.gov/DocumentLibrarySearch?d=game_of_chance" target="_blank">Games of Chance</a></li>
@@ -281,8 +338,7 @@
 
 <div class="row" data-equalizer="foo"></div>
     <div class="large-12 columns">
-<h3 class='content-headers'style="color:black;"><strong>Visit Business Services</strong></h3>
-<hr>
+<h3 class='content-headers'style="color:black;"><strong>Visit Business Services</strong></h3><hr>
  <div class="columns large-3 columns">
  <div class="lightgraypanel" data-equalizer-watch="foo">
      <h4 class="content-headers"><font size="3"><strong>CONTACT US</strong></font></h4>
@@ -315,13 +371,8 @@
           href="https://twitter.com/risecstate"><i class="fa fa-twitter fa-stack-1x" style="color:rgb(0, 107, 179);"></a></i></span> <span class="fa-stack fa-lg"><a target="_blank" href="https://www.facebook.com/RISecState"><i class="fa fa-facebook fa-stack-1x" style="color:rgb(0, 107, 179);"></a></i></span>
 	  </a></i></span> <span class="fa-stack fa-lg"><a target="_blank" href="https://www.linkedin.com/company/office-of-the-secretary-of-state-nellie-gorbea"><i class="fa fa-linkedin fa-stack-1x" style="color:rgb(0, 107, 179);"></a></i></span></p></div>
 		
-
 </div></div>
 </body>
+</div></div>
 </html>
 
-<!-- Credit to -->
-<!--  https://get.foundation/sites/docs/equalizer.html-->
-<!--  https://getbootstrap.com/docs/5.1/components/carousel/-->
-<!--  https://developer.mozilla.org/en-US/docs/Web/CSS/animation-->
-<!--  https://dracos.github.io/foundation-sites/components/orbit.html-->
