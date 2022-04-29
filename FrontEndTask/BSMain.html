@@ -121,13 +121,34 @@
         </li>
       </ul>
     </nav>
-<body class=" background-color:whitesmoke; align-items: center; margin-bottom: 100px; padding: 1.5em; font-family: Georgia, 'Times New Roman', Times, serif;font-size: 0.85em; position:relative; height: 100vh; top: 0px">
+<body class= "">
   <!-- Page contain View Set up--> 
-  <div class="Large-12 columns" >
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div id="page-wrapper">
+      <div id="page">
+        <header id="header" class="header" role="banner" aria-label="Site header">
+          <nav class="navbar" id="navbar-top" aria-label="">
+            <div class="container">
+              <section class="row region-top-header">
+                <div class="views-element-container block block-views">
+                </div>
+              </section>
+            </div>
+          </nav>
+        </header> 
+      </div>
+    </div>
+  </div>
+  <div id="main-wrapper" class="layout-main-wrapper clearfix">
+    <div id="main" class="conatiner">
+      <div class="row row-offcanvas row-offcanvas-left clearfix"></div>
+    </div>
+  </div>
+  <div class="Large-12 columns">
     <h2 class='content-headers' style="font-family: 'Times New Roman', Times, serif; color: dodgerblue;">Business Services</h2>
-    <h3 class="subheader" style="color: black; font-family: 'Times New Roman', Times, serif;">The Department of State Business Services Division maintains Rhode Island’s state business registry. While we record new business formations and ongoing business registration activity, we also provide thoughtful guidance and comprehensive services to those looking to start and maintain a business or non-profit in Rhode Island.</h3>
+    <h3 class="subheader" style="color: black;font-family: 'Times New Roman', Times, serif; font-stretch: condensed;">The Department of State Business Services Division maintains Rhode Island’s state business registry. While we record new business formations and ongoing business registration activity, we also provide thoughtful guidance and comprehensive services to those looking to start and maintain a business or non-profit in Rhode Island.</h3>
 	<hr>
-  <div class="row">
+  
   <div class="thinpanel">
     <div data-alert class="alert" style="background-color:sandybrown;">
 	<h5><span class="fa fa-exclamation-circle" style="color: darkred; size:inherit"></span>
@@ -138,29 +159,28 @@
     <p>Desconfíe de cualquier empresa privada que le envíe solicitudes o exija una respuesta para obtener un Certificado de Buen Estado Corporativo a su nombre por una tarifa exorbitante. Si su negocio requiere un Certificado de Buen Estado Corporativo para completar una transacción comercial, por favor comuníquese con nuestra oficina directamente al <b>401-222-3040</b> o solicite por internet <a href="https://www.sos.ri.gov/divisions/business-services/order-certificates"><strong>aquí</strong> </a>. </p>
     <hr>
 </div>
-    </div>  
-     <!--Change all links in this section to point to google search page but levae the display names as they are DONE!!!-->
-      <!-- Absolute URLs Solution--> 
-    <div class="row">
- <div class= "Large-12 columns" style: box-shadow: 0 9px #999;>
-   <div class=" columns large-4 columns"> 
-      <div class="docs section-container;">
-        <section class="section"> 
-        <h3 class="content-headers" style="color: black"><strong>Quick Links</strong></h3><hr> 
-        <ul class="square">
-          <li><a href="https://www.google.com/" target="_blank">File a Business Annual Report</a></li>
-			    <li><a href="https://www.google.com/" target="_blank">File a Non-Profit Annual Report</a></li>
-          <li><a href="https://www.google.com/" target="_blank">Check Filing Status</a></li>
-          <li><a href="https://www.google.com/" target="_blank">New Entity Listing </a></li>
-          <li><a href="https://www.google.com/" target="_blank">Reinstate Your Business</a></li>
-		      <li><a href="https://www.google.com/" target="_blank">Apostilles</a></li>
-		      <li><a href="https://www.google.com/" target="_blank">Request a Certificate of Good Standing</a></li>
-	      	<li><a href="https://www.google.com/" target="_blank">Forms Library</a></li>
-		      <li><a href="https://www.google.com/" target="_blank">Email Subscription Services</a></li>
-				  <li><a href="https://www.google.com/" target="_blank">One-Day Marriage Officiant Certification</a></li>
-        </ul>
-      </div>
-    </div>
+    
+<!--Change all links in this section to point to google search page but levae the display names as they are DONE!!!-->
+<!-- Absolute URLs Solution--> 
+ <div class="sidebar_first sidebar col-md-3 order-first" id="sidebar_first">
+   <aside class="section" role="complementary" aria-label="main menu section">
+     <nav role="navigation"  class="block block-menu navigation">
+      <h3 class= "visually-hidden" style="color: black"><strong>Quick Links</strong></h3>
+      <ul class="clearfix nav navbar-nav; square">
+        <li class="nav-item"><a href="https://www.google.com/" target="_blank">File a Business Annual Report</a></li>
+        <li class="nav-item"><a href="https://www.google.com/" target="_blank">File a Non-Profit Annual Report</a></li>
+        <li class="nav-item"><a href="https://www.google.com/" target="_blank">Check Filing Status</a></li>
+        <li class="nav-item"><a href="https://www.google.com/" target="_blank">New Entity Listing </a></li>
+        <li class="nav-item"><a href="https://www.google.com/" target="_blank">Reinstate Your Business</a></li>
+        <li class="nav-item"><a href="https://www.google.com/" target="_blank">Apostilles</a></li>
+        <li class="nav-item"><a href="https://www.google.com/" target="_blank">Request a Certificate of Good Standing</a></li>
+        <li class="nav-item"><a href="https://www.google.com/" target="_blank">Forms Library</a></li>
+        <li class="nav-item"><a href="https://www.google.com/" target="_blank">Email Subscription Services</a></li>
+        <li class="nav-item"><a href="https://www.google.com/" target="_blank">One-Day Marriage Officiant Certification</a></li>
+      </ul>
+    </nav>
+   </aside>
+ </div>
     <!--Create a slideshow for this section utilizing the images provided in the images direcotry included as part of the project-->
     <!--Change all links in this section to point to any site of your choosing-->
     <!-- Let's load all the JPG first-->
@@ -169,14 +189,20 @@
     <div class="views-element-container block block-views-blockslider-view-block-1" id="block-views-block-slider-view-block-1">
       <div class="content">
       </div>
-      <div class="view view-slider-view view-id-slider_view view-display-id-block_1 js-view-dom-id-0d7a95716552ef441bed18cb640d8c36f569aac819a588d37aadea9a8bc45178"></div>
-      <div class="orbit-container">
-         <div class="orbit-container">
-	    <ul data-orbit class="orbit-slides-container" data-option="animation: slide; pause_on_hover:true; animation_speed:500; navigation_arrows:true;bullets:false;" style="height: 250px; position: relative;"> 
-        <li class style="z-index: 2; margin-left: 100%;background-color:darkseagreen; font-family: 'Times New Roman', Times, serif;"><a href="https://www.sos.ri.gov/divisions/business-services/covid-19-modified-operations" target="_blank">
-          <img src="Images/covid-in-person.jpg" alt="Covid 19 Modified Operations" title="Covid 19 Modified Operations"></a>
-          <div class="table caption">Covid 19 Modified Operations</div></li>              
-        <li class="active" style="z-index: 4; margin-left: 0%; background-color:darkseagreen; font-family: 'Times New Roman', Times, serif; position: relative;"><a href="https://risosbusiness.reframeengage.com" target="_blank">
+      <div class="view view-slider-view view-id-slider_view view-display-id-block_1 ">
+        <div class="view-content row">
+          <div id="views-bootstrap-slider-view-block-1" class="carousel slide" data-interval="750" data-ride="carousel" data-pause="hover">
+               <div class="orbit-container">
+                <div class="carousel-inner">
+                  <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3><a href="https://www.sos.ri.gov/divisions/business-services/covid-19-modified-operations"></a></h3>
+                      <div class="p-description">
+                   <ul data-orbit class="orbit-slides-container" data-option="animation: slide; pause_on_hover:true; animation_speed:500; navigation_arrows:true;bullets:false;" style="height: 300px; position: relative;"> 
+                    <li class style="z-index: 2; margin-left: 100%;background-color:darkseagreen; font-family: 'Times New Roman', Times, serif;"><a href="https://www.sos.ri.gov/divisions/business-services/covid-19-modified-operations" target="_blank">
+                      <img src="Images/covid-in-person.jpg" alt="Covid 19 Modified Operations" title="Covid 19 Modified Operations"></a>
+                      <div class="table caption">Covid 19 Modified Operations</div></li>
+                      <li class="active" style="z-index: 4; margin-left: 0%; background-color:darkseagreen; font-family: 'Times New Roman', Times, serif; position: relative;"><a href="https://risosbusiness.reframeengage.com" target="_blank">
           <img src="Images/virtual-hours-image.jpg" alt="Virtual Office Hours" title="Virtual Office Hours"></a>
           <div class="table caption">Click the picture above to make an appointment!</div></li>   
         <li class style="z-index: 2; margin-left: 100%; background-color:darkseagreen; font-family: 'Times New Roman', Times, serif;"><a href="https://www.sos.ri.gov/divisions/business-services/center-stage-program"target="_blank">
@@ -216,8 +242,11 @@
         </ol>
       </div>
     </div>
+  </div>
 </div>
-
+</div>
+</div>
+</div>
 </section>	
   <div class="small-4 columns">
     
@@ -385,7 +414,11 @@
 	  </a></i></span> <span class="fa-stack fa-lg"><a target="_blank" href="https://www.linkedin.com/company/office-of-the-secretary-of-state-nellie-gorbea"><i class="fa fa-linkedin fa-stack-1x" style="color:rgb(0, 107, 179);"></a></i></span></p></div>
 		
 </div></div>
+<div id="footer"><hr>
+  <div class="copyright">2022 © &mu;Sethia Lochard-FrontEndWeb Assignment</div>
+</div>
 </body>
-</div></div>
+</div>
+</div>
 </html>
 
