@@ -102,8 +102,13 @@
         }
       });
       </script>
-   
-
+      <script type="text/javascript">
+        $(window).load(function() {
+           $('#data-orbit').orbit({
+              bullets: false
+           });
+        });
+     </script>
     <title>What Can You Do</title>
 </head>
 <div class=" antialiased off-canvas hide-extras off-canvas-wrap" data-offcanvas>
@@ -164,7 +169,7 @@
 	    <ul data-orbit class="orbit-slides-container" data-option="animation: slide; pause_on_hover:true; animation_speed:500; navigation_arrows:true;bullets:false;" style="height: 250px; position: relative;"> 
         <li class style="z-index: 2; margin-left: 100%;background-color:darkseagreen; font-family: 'Times New Roman', Times, serif;"><a href="https://www.sos.ri.gov/divisions/business-services/covid-19-modified-operations" target="_blank">
           <img src="Images/covid-in-person.jpg" alt="Covid 19 Modified Operations" title="Covid 19 Modified Operations"></a>
-          <div class="table caption">Covid 19 Modified Operations</div></li>               
+          <div class="table caption">Covid 19 Modified Operations</div></li>              
         <li class="active" style="z-index: 4; margin-left: 0%; background-color:darkseagreen; font-family: 'Times New Roman', Times, serif; position: relative;"><a href="https://risosbusiness.reframeengage.com" target="_blank">
           <img src="Images/virtual-hours-image.jpg" alt="Virtual Office Hours" title="Virtual Office Hours"></a>
           <div class="table caption">Click the picture above to make an appointment!</div></li>   
