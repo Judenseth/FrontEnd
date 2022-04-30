@@ -1,235 +1,166 @@
 ﻿<!DOCTYPE html>
-<!-- Credit to -->
-<!--  https://get.foundation/sites/docs/equalizer.html-->
-<!--  https://getbootstrap.com/docs/5.1/components/carousel/-->
-<!--  https://developer.mozilla.org/en-US/docs/Web/CSS/animation-->
-<!--  https://dracos.github.io/foundation-sites/components/orbit.html-->
-<!-- Lets  allow the use of CSS to style JavaScript-free page-->
-<html class="no-js" lang="en" style="height: 100%;"> 
-
+<html>
 <head>
-  
-    <!--Create a style sheet to style and layout this page to showcase you skills. Look for additional comments as a guide-->
-    <meta charset="utf-8" />
-      <meta name="description" content="Project">
-    <!--Mobile Device Friendly-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="MobileOptimized" content="320">
-    <meta name="HandleFriendly" content="True">
-    <meta name="dateofLastModification" content="">
-		<meta name="timePeriodTextual" content="current">
-		<meta name="medium" content="website">
-    <meta name="contactName" content="">
-    <meta name="contactStreetAddress1" content="">
-		<meta name="contactStreetAddress2" content="">
-    <meta name="contactCity" content="Providence">
-		<meta name="contactState" content="Rhode Island">
-		<meta name="contactZipcode" content="">
-		<meta name="contactPhoneNumber" content="">
-		<meta name="contactFaxNumber" content="">
-		<meta name="contactNetworkAddress" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--The Google Site Verification API-->
-		<meta name="google-site-verification" content="daRITf-4vXNdakzRGu82koAHViN45GS2QpAFQq4u1lE" />
-    <meta name="keywords" content="Rhode Island, Department of State, RI, certificate,  Non-Profits, Nellie, Gorbea" />
-    <!-- IE=edge: specifies that IE should run in the highest mode available to that version of IE as opposed to a compatability
-         mode; IE8 can support up to IE8 modes, IE9 can support up to IE9 modes, and so on. chrome=1: specifies that Google Chrome 
-         frame should start if the user has it installed-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edege, chrome=1">
-    <!--Let's link the HTML and the CSS files together: Style Sheets-->
-    <link rel="stylesheet" type="text/css" href="style.css" media="media" />
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/foundation/5.5.3/css/normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/foundation/5.5.3/css/foundation.min.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/js/dataTables.semanticui.min.js"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.11/css/dataTables.foundation.min.css"/>
-		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.0.2/css/responsive.foundation.min.css"/>
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css"/>
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.owlcarousel/1.3.2/owl.carousel.min.css"/>
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.owlcarousel/1.3.2/owl.theme.min.css"/>
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.owlcarousel/1.3.2/owl.transitions.min.css"/>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/0.8.0/viewer.min.css">
-    <link rel="stylesheet" href="https://www.google.com/cse/style/look/default.css" type="text/css" />
-    <!-- For third-generation iPad with high-resolution Retina display: -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicons/apple-touch-icon-144x144-precomposed.png">
-    <!-- For iPhone with high-resolution Retina display: -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicons/apple-touch-icon-114x114-precomposed.png">
-    <!-- For first- and second-generation iPad: -->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/apple-touch-icon-72x72-precomposed.png">
-    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-    <link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <title>Foundation Docs: Right-to-Left Support</title>
-    <link rel="stylesheet" href="/foundation-sites/assets/normalize.css" />
-    <link rel="stylesheet" href="/foundation-sites/assets/docs.css" />
-    <script src="/foundation-sites/assets/vendor/custom.modernizr.js"></script>
-    <!-- Let's hook up CSS -->
-    <link rel="stylesheet" href="css/orbit.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.owlcarousel/1.3.2/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/foundation/5.5.3/js/foundation.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/dataTables.foundation.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.0.2/js/dataTables.responsive.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.0.2/js/responsive.foundation.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.owlcarousel/1.3.2/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/history.js/1.8.0b2/history.adapter.jquery.js"></script>
-    <!-- Let's add jQuery and the Orbit plug-in -->
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/jquery.orbit.min.js" type="text/javascript"></script>
-    <!-- let's activate the Orbit plug-in-->
-    <!-- Resizing the browser size-->
-    <script>
-      $(document).foundation('orbit');
-      $(window).resize();
-    </script>
-    <script>
-      $(document).on('opened', '[data-reveal]', function () {
-      var modal = $(this);
-      $(window).trigger('resize');
-      });
-      </script>
-      <script>$(document).foundation({
-        orbit: {
-          animation: 'slide-show',
-          timer_speed: 1000,
-          pause_on_hover: true,
-          animation_speed: 500,
-          navigation_arrows: true,
-          bullets: false
-        }
-      });
-      </script>
-      <script type="text/javascript">
-        $(window).load(function() {
-           $('#data-orbit').orbit({
-              bullets: false
-           });
-        });
-     </script>
+<!--Create a style sheet to style and layout this page to showcase you skills. Look for additional comments as a guide-->
+<meta charset="utf-8">
+<meta name="description" content="Project">
+<!--Mobile Device Friendly-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="MobileOptimized" content="320">
+<meta name="HandleFriendly" content="True">
+<meta name="dateofLastModification" content="">
+<meta name="timePeriodTextual" content="current">
+<meta name="medium" content="website">
+<meta name="contactName" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--The Google Site Verification API-->
+<meta name="google-site-verification" content="daRITf-4vXNdakzRGu82koAHViN45GS2QpAFQq4u1lE">
+<meta name="keywords" content="Rhode Island, Department of State, RI, certificate,  Non-Profits, Nellie, Gorbea">
+<!-- IE=edge: specifies that IE should run in the highest mode available to that version of IE as opposed to a compatability
+      mode; IE8 can support up to IE8 modes, IE9 can support up to IE9 modes, and so on. chrome=1: specifies that Google Chrome 
+      frame should start if the user has it installed-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+<!--Let's link the HTML and the CSS files together for display: Style Sheets-->
+<link rel="stylesheet" type="text/css" href="style.css" media="media">
+<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+<link rel="stylesheet" href="css/orbit.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/foundation/5.5.3/css/normalize.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/foundation/5.5.3/css/foundation.min.css">
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/js/dataTables.semanticui.min.js">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.0.2/css/responsive.foundation.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.owlcarousel/1.3.2/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.owlcarousel/1.3.2/owl.theme.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.owlcarousel/1.3.2/owl.transitions.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.ui/1.11.4/jquery-ui.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/0.8.0/viewer.min.css">
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.owlcarousel/1.3.2/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/foundation/5.5.3/js/foundation.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/dataTables.foundation.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.0.2/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.0.2/js/responsive.foundation.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.owlcarousel/1.3.2/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/history.js/1.8.0b2/history.adapter.jquery.js"></script>
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.orbit.min.js" type="text/javascript"></script>
+
+<!--Attach the Reveal CSS -->
+<link rel="stylesheet" href="reveal.css">
+
+<!-- jQuery needs to be attached -->
+<script src="jquery.min.js" type="text/javascript"></script>
+
+<!-- Then just attach the Reveal plug-in -->
+<script src="jquery.reveal.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(window).load(function() {
+  $('#data-orbit').orbit({
+     'bullets' : true,
+     'bulletThumbs': true,
+     'bulletThumbLocation': 'orbit/'
+  });
+});
+</script>
+
     <title>What Can You Do</title>
 </head>
-<div class=" antialiased off-canvas hide-extras off-canvas-wrap" data-offcanvas>
-  <div class="inner-wrap">
-    <nav class="top-bar hide-for-small">
-      <ul class="title-area" style="background-color: blue; font-family: 'Times New Roman', Times, serif; box-shadow: 0 9px #999;">
-        <!-- Title Area-->
-        <li class="name">
-          <h1><a href="/">Click Me</a></h1>
-        </li>
-      </ul>
-    </nav>
-<body class= "">
-  <!-- Page contain View Set up--> 
-  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
-    <div id="page-wrapper">
-      <div id="page">
-        <header id="header" class="header" role="banner" aria-label="Site header">
-          <nav class="navbar" id="navbar-top" aria-label="">
-            <div class="container">
-              <section class="row region-top-header">
-                <div class="views-element-container block block-views">
-                </div>
-              </section>
-            </div>
-          </nav>
-        </header> 
-      </div>
-    </div>
-  </div>
-  <div id="main-wrapper" class="layout-main-wrapper clearfix">
-    <div id="main" class="conatiner">
-      <div class="row row-offcanvas row-offcanvas-left clearfix"></div>
-    </div>
-  </div>
-  <div class="Large-12 columns">
-    <h2 class='content-headers' style="font-family: 'Times New Roman', Times, serif; color: dodgerblue;">Business Services</h2>
-    <h3 class="subheader" style="color: black;font-family: 'Times New Roman', Times, serif; font-stretch: condensed;">The Department of State Business Services Division maintains Rhode Island’s state business registry. While we record new business formations and ongoing business registration activity, we also provide thoughtful guidance and comprehensive services to those looking to start and maintain a business or non-profit in Rhode Island.</h3>
-	<hr>
-  
-  <div class="thinpanel">
-    <div data-alert class="alert" style="background-color:sandybrown;">
-	<h5><span class="fa fa-exclamation-circle" style="color: darkred; size:inherit"></span>
-    <span class="msg"><strong> BUSINESS ALERT: Certificates of Good Standing  - ALERTA EMPRESARIAL Certificados de Buen Estado Corporativo</strong></span>
-     </h5></div>
-    <p>Be wary of any private company sending solicitations or demanding a response to obtain a certificate of good standing on your behalf for an exorbitant fee.&nbsp; If your business requires a certificate of good standing to complete a business transaction, please contact our office directly at <b>401-222-3040</b> or order online <a href="https://www.sos.ri.gov/divisions/business-services/order-certificates"><strong>here</strong></a>.</p>
+<body>
+  <div class=" antialiased off-canvas hide-extras off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+      <nav class="top-bar hide-for-small">
+        <ul class="title-area" style="background-color: blue; font-family: 'Times New Roman', Times, serif; box-shadow: 0 9px #999;">
+          <!-- Title Area-->
+          <li class="name">
+            <h1><a href="/">Click Me</a></h1>
+          </li>
+        </ul>
+      </nav>   
+      <h2 class='content-headers' style="font-family: 'Times New Roman', Times, serif; color:rgb(0, 107, 179);">Business Services</h2><hr>
+
+	<h3 class="subheader">The Department of State Business Services Division maintains Rhode Island’s state business registry. While we record new business formations and ongoing business registration activity, we also provide thoughtful guidance and comprehensive services to those looking to start and maintain a business or non-profit in Rhode Island.</h3>
 	
-    <p>Desconfíe de cualquier empresa privada que le envíe solicitudes o exija una respuesta para obtener un Certificado de Buen Estado Corporativo a su nombre por una tarifa exorbitante. Si su negocio requiere un Certificado de Buen Estado Corporativo para completar una transacción comercial, por favor comuníquese con nuestra oficina directamente al <b>401-222-3040</b> o solicite por internet <a href="https://www.sos.ri.gov/divisions/business-services/order-certificates"><strong>aquí</strong> </a>. </p>
-    <hr>
-</div>
+  <div class="row"><hr>
+    <div class="thinpanel">
+<div data-alert class="boxalert" style="background-color: sandybrown;">
+	<h5><i class="fa fa-exclamation-triangle" style="color:firebrick;"></i>
+    <strong> BUSINESS ALERT: Certificates of Good Standing  - ALERTA EMPRESARIAL: Certificados de Buen Estado Corporativo</strong></h5>
+    <p>Be wary of any private company sending solicitations or demanding a response to obtain a certificate of good standing on your behalf for an exorbitant fee.&nbsp; If your business requires a certificate of good standing to complete a business transaction, please contact our office directly at <strong>401-222-3040</strong>  or order online <a href="https://www.sos.ri.gov/divisions/business-services/order-certificates">here</a>.</p>
+	
+    <p>Desconfíe de cualquier empresa privada que le envíe solicitudes o exija una respuesta para obtener un Certificado de Buen Estado Corporativo a su nombre por una tarifa exorbitante. Si su negocio requiere un Certificado de Buen Estado Corporativo para completar una transacción comercial, por favor comuníquese con nuestra oficina directamente al <strong>401-222-3040 </strong> o solicite por internet <a href="https://www.sos.ri.gov/divisions/business-services/order-certificates">aquí</a>.</p>
+</div></div>
+    </div>
     
-<!--Change all links in this section to point to google search page but levae the display names as they are DONE!!!-->
-<!-- Absolute URLs Solution--> 
- <div class="sidebar_first sidebar col-md-3 order-first" id="sidebar_first">
-   <aside class="section" role="complementary" aria-label="main menu section">
-     <nav role="navigation"  class="block block-menu navigation">
-      <h3 class= "visually-hidden" style="color: black"><strong>Quick Links</strong></h3>
-      <ul class="clearfix nav navbar-nav; square">
-        <li class="nav-item"><a href="https://www.google.com/" target="_blank">File a Business Annual Report</a></li>
-        <li class="nav-item"><a href="https://www.google.com/" target="_blank">File a Non-Profit Annual Report</a></li>
-        <li class="nav-item"><a href="https://www.google.com/" target="_blank">Check Filing Status</a></li>
-        <li class="nav-item"><a href="https://www.google.com/" target="_blank">New Entity Listing </a></li>
-        <li class="nav-item"><a href="https://www.google.com/" target="_blank">Reinstate Your Business</a></li>
-        <li class="nav-item"><a href="https://www.google.com/" target="_blank">Apostilles</a></li>
-        <li class="nav-item"><a href="https://www.google.com/" target="_blank">Request a Certificate of Good Standing</a></li>
-        <li class="nav-item"><a href="https://www.google.com/" target="_blank">Forms Library</a></li>
-        <li class="nav-item"><a href="https://www.google.com/" target="_blank">Email Subscription Services</a></li>
-        <li class="nav-item"><a href="https://www.google.com/" target="_blank">One-Day Marriage Officiant Certification</a></li>
-      </ul>
-    </nav>
-   </aside>
- </div>
+<div class="row"><hr>
+  <div class="columns large-12 columns">
+    <div class="columns large-4 columns" style="box-sizing:border-box;">
+      <div class="panel listing">
+          <!--Change all links in this section to point to google search page but levae the display names as they are-->
+           <!-- Absolute URLs Solution-->
+        <h4 class="docs-header" style="text-transform: capitalize; padding: 0.5em; color:white; background-color: rgb(0, 107, 179);"><strong> Quick Links</strong></h4>
+        <ul class="square">
+          <li class="list-group-item"><a href="https://www.google.com/">File a Business Annual Report</a></li>
+          <li class="list-group-item"><a href="https://www.google.com/">File a Non-Profit Annual Report</a></li>
+          <li class="list-group-item"><a href="https://www.google.com/">Check Filing Status</a></li>
+          <li class="list-group-item"><a href="https://www.google.com/">New Entity Listing </a></li>
+          <li class="list-group-item"><a href="https://www.google.com/">Reinstate Your Business</a></li>
+          <li class="list-group-item"><a href="https://www.google.com/">Apostilles</a></li>
+          <li class="list-group-item"><a href="https://www.google.com/">Request a Certificate of Good Standing</a></li>
+          <li class="list-group-item"><a href="https://www.google.com/">Forms Library</a></li>
+          <li class="list-group-item"><a href="https://www.google.com/">Email Subscription Services</a></li>
+          <li class="list-group-item"><a href="https://www.google.com/">One-Day Marriage Officiant Certification</a></li>
+        </ul>
+      </div>
+    </div>
+
     <!--Create a slideshow for this section utilizing the images provided in the images direcotry included as part of the project-->
-    <!--Change all links in this section to point to any site of your choosing-->
-    <!-- Let's load all the JPG first-->
-  </section>
-  <section class="row region region-slider">
-    <div class="views-element-container block block-views-blockslider-view-block-1" id="block-views-block-slider-view-block-1">
-      <div class="content">
-      </div>
-      <div class="view view-slider-view view-id-slider_view view-display-id-block_1 ">
-        <div class="view-content row">
-          <div id="views-bootstrap-slider-view-block-1" class="carousel slide" data-interval="750" data-ride="carousel" data-pause="hover">
-               <div class="orbit-container">
-                <div class="carousel-inner">
-                  <div class="carousel-item">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h3><a href="https://www.sos.ri.gov/divisions/business-services/covid-19-modified-operations"></a></h3>
-                      <div class="p-description">
-                   <ul data-orbit class="orbit-slides-container" data-option="animation: slide; pause_on_hover:true; animation_speed:500; navigation_arrows:true;bullets:false;" style="height: 300px; position: relative;"> 
-                    <li class style="z-index: 2; margin-left: 100%;background-color:darkseagreen; font-family: 'Times New Roman', Times, serif;"><a href="https://www.sos.ri.gov/divisions/business-services/covid-19-modified-operations" target="_blank">
-                      <img src="Images/covid-in-person.jpg" alt="Covid 19 Modified Operations" title="Covid 19 Modified Operations"></a>
-                      <div class="table caption">Covid 19 Modified Operations</div></li>
-                      <li class="active" style="z-index: 4; margin-left: 0%; background-color:darkseagreen; font-family: 'Times New Roman', Times, serif; position: relative;"><a href="https://risosbusiness.reframeengage.com" target="_blank">
-          <img src="Images/virtual-hours-image.jpg" alt="Virtual Office Hours" title="Virtual Office Hours"></a>
-          <div class="table caption">Click the picture above to make an appointment!</div></li>   
-        <li class style="z-index: 2; margin-left: 100%; background-color:darkseagreen; font-family: 'Times New Roman', Times, serif;"><a href="https://www.sos.ri.gov/divisions/business-services/center-stage-program"target="_blank">
-          <img src="Images/center-stage-image.jpg" alt="Celebrating Rhode Island's Business Community" title="Celebrating Rhode Island's Business Community"></a>
-          <div class="table caption">Celebrating Rhode Island's Business Community</div></li>
-        <li class style="z-index: 2; margin-left: 100%; background-color:darkseagreen; font-family: 'Times New Roman', Times, serif;"><a href="https://www.sos.ri.gov/divisions/notary-public/one-day-officiant/" target="_blank">
-          <img src="Images/one-day-marriage-im.jpg" alt="One-Day Marriage Officiant Certification" title="One-Day Marriage Officiant Certification"></a>
-          <div class="table caption">One-Day Marriage Officiant Certification</div> </li>
-      <li class style="z-index: 2; margin-left: 100%; background-color:darkseagreen; font-family: 'Times New Roman', Times, serif;"><a href="https://www.sos.ri.gov/divisions/business-services/applying-for-sba-loan"  target="_blank">
-          <img src="Images/sba-loan-help-image.png" alt="Applying for a Small Business SBA Loan, We can help!" title="Applying for a Small Business SBA Loan, We can help!"></a>
-          <div class="table caption">Applying for a Small Business Loan</div></li>
-        <li class style="z-index: 2; margin-left: 100%; background-color:darkseagreen; font-family: 'Times New Roman', Times, serif; text-align: center;"><a href="https://www.sos.ri.gov/divisions/business-services/business-basics/" target="_blank">
-          <img src="Images/plan-a-business-image.png" alt="Planning a new business" title="Planning a new business"></a>
-          <div class="table caption">Planning a new business</div></li>
-        </ul><hr>
-         <!-- Prev/Next Arrows -->
-        <a href="#" class="orbit-prev"><span></span></a>
-        <a href="#" class="orbit-next"><span></span></a>
-        <!-- Timer and Play/Pause Button -->
-        <div class="orbit-timer paused"><span></span>
-          <div class="orbit-progress" style="width: 15%; animation: width 10s linear;">
-          </div>
-      </div>
-       <!--Slide Numbers Count -->
-       <div class="orbit-slide-number">
-        <span>1</span>/<span>6</span> 
-       </div>
+    <!--Change all links in this section to point to any site of your choosing-->	 
+<div class="columns large-4 columns">
+  <div class="orbit-container">
+	<ul data-orbit class="orbit-slides-container" data-orbit style="height: 350px;">
+    
+    <li class="active" style="z-index: 4; margin-left: 0%;"><a href="https://www.sos.ri.gov/divisions/business-services/covid-19-modified-operations"target="_blank">
+      <img src="Images/covid-in-person.jpg" alt="Covid 19 Modified Operations" title="Covid 19 Modified Operations"></a>
+      <div class="table caption">Covid 19 Modified Operations</div>
+    </li>
+    <li class style="z-index: 2; margin-left: 100%;"><a href="https://risosbusiness.reframeengage.com" target="_blank">
+      <img src="Images/virtual-hours-image.jpg" alt="Virtual Office Hours" title="Virtual Office Hours"></a>
+      <div class="table caption">Click the picture above to make an appointment!</div>
+    </li>
+  	<li class style="z-index: 2; margin-left: 100%;"><a href="https://www.sos.ri.gov/divisions/business-services/center-stage-program" target="_blank">
+      <img src="Images/center-stage-image.jpg" alt="Celebrating Rhode Island's Business Community" title="Celebrating Rhode Island's Business Community"></a>
+			<div class="table caption">Celebrating Rhode Island's Business Community</div>
+    </li>
+    <li class style="z-index: 2; margin-left: 100%;"><a href="https://www.sos.ri.gov/divisions/business-services/applying-for-sba-loan" target="_blank">
+      <img src="Images/sba-loan-help-image.png" alt="Applying for a Small Business SBA Loan, We can help!" title="Applying for a Small Business SBA Loan, We can help!"></a>
+			<div class="table caption">Applying for a Small Business Loan</div>
+    </li>
+		<li class style="z-index: 2; margin-left: 100%;"><a href="https://www.sos.ri.gov/divisions/notary-public/one-day-officiant/" target="_blank">
+      <img src="Images/one-day-marriage-im.jpg" alt="One-Day Marriage Officiant Certification" title="One-Day Marriage Officiant Certification" ></a>
+			<div class="table caption">One-Day Marriage Officiant Certification</div>
+    </li>
+		<li class style="z-index: 2; margin-left: 100%;"><a href="https://www.sos.ri.gov/divisions/business-services/business-basics/" target="_blank">
+      <img src="Images/plan-a-business-image.png" alt="Planning a new business" title="Planning a new business"></a>
+			<div class="table caption">Planning a new business</div>
+    </li> 
+</ul>
+ <!-- Orbit Prev/Next Arrows -->
+ <a href="#" class="orbit-prev"><span></span></a>
+ <a href="#" class="orbit-next"><span></span></a>
+  <!-- Timer and Play/Pause Button -->
+  <div class="orbit-timer paused"><span></span>
+    <div class="orbit-progress" style="width: 0%;">
+    </div></div>
+ <!--Slide Numbers Count -->
+  <div class="orbit-slide-number">
+    <span>1</span>/<span>6</span>
+  </div>
       <!-- Orbit Bullet Slide Indicator -->
       <div class="orbit-bullets-container">
         <ol class="orbit-bullets">
@@ -243,40 +174,34 @@
       </div>
     </div>
   </div>
-</div>
-</div>
-</div>
-</div>
-</section>	
-  <div class="small-4 columns">
-    
-    <!--The first two links in this section can remain as they are. You can choose where the third link points DONE!!!--> 
-	  <div class="brightbluepanel">
-		<h4 class="docs header">
-      <a href="https://business.sos.ri.gov/corp/loginsystem/login_form.asp" target="_blank">File Online <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h4>
-		<p>Use our electronic filing system to quickly file your corporate documents. Review our <a href="/divisions/business-services/refund-policy" target="_blank">refund policy</a>.</p>
+
+<div class="columns large-4 columns " > 
+    <!--The first two links in this section can remain as they are. You can choose where the third link points--> 
+	  <div class="brightbluepanel" style="background-color: #F0F8FF;">
+		<h4 class="content-headers"><a href="https://business.sos.ri.gov/corp/loginsystem/login_form.asp" target="_blank">File Online <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h4>
+		<p>Use our electronic filing system to quickly file your corporate documents. Review our <a href="https://www.sos.ri.gov/divisions/business-services/refund-policy" target="_blank">refund policy</a>.</p>
 	  </div>
-		<div class="brightbluepanel">
-		<h4 class="docs header">
-      <a href="https://business.sos.ri.gov/CorpWeb/CorpSearch/CorpSearch.aspx" target="_blank">Search the Corporate Database <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h4>
+		<div class="brightbluepanel" style="background-color: #F0F8FF;">
+		<h4 class="content-headers"><a href="https://business.sos.ri.gov/CorpWeb/CorpSearch/CorpSearch.aspx" target="_blank">Search the Corporate Database <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h4>
 <p>Search active and inactive businesses registered with the RI Department of State. Our <a href="https://www.sos.ri.gov/divisions/business-services/search-assistance-corporate-database" target="_blank">Search Guide</a> provides helpful hints to make your search easier. </p>
-<p><a href="/divisions/business-services/what-information-can-we-provide" target="_blank">Learn more</a> about the information held by our office.</p>
+<p><a href="https://www.sos.ri.gov/divisions/business-services/what-information-can-we-provide" target="_blank">Learn more</a> about the information held by our office.</p>
       </div>
-    </div></div></div></div>	
+</div>
+</div> 
+	</div>	
 
- <div class="large-12 columns">
-  <div class="row"> 
-	<h3 class='docs header'><strong>Start, maintain, or close your business or non-profit</strong></h3><hr>
-
-</div></div>
-
-	  <div class="row" data-equalizer="foo">
+<div class="row">
+  <div class="columns large-12 columns">
+    <h3 class='docs header'><strong>Start, maintain, or close your business or non-profit</strong></h3><hr>
+  </div>
+</div>
+<div class="row" data-equalizer="foo">
           <!--Fix the images using the images directory provided-->
           <!--Change the URL to point to google search page in this section-->
     <div class="small-12 large-4 columns">  
    <div class="brightbluepanel"  data-equalizer-watch="foo">
 	   <a href="/divisions/business-services/ri-business/"><img style="PADDING-BOTTOM: 10px" src="Images/ri-business-images.png" alt="Rhode Island Business" title="Rhode Island Business">
-     <h3>For RI Businesses </span><i class="arrow right" style="text-align:center;"aria-hidden="true"></i></a></h3>
+     <h3>For RI Businesses </span><i class="fa fa-arrow-right" aria-hidden="true"></i></a></h3>
   <ul>
 	  <li><a href="/divisions/business-services/business-basics/" target="_blank">Plan for Success</a></li>
 	  <li><a href="/divisions/business-services/ri-business/start-your-rhode-island-business" target="_blank">Start a New Business</a></li>
@@ -290,7 +215,7 @@
     <div class="small-12 large-4 columns">    
         <div class="brightbluepanel"  data-equalizer-watch="foo">
 				<a href="/divisions/business-services/foreign-business/">   <img style="PADDING-BOTTOM: 10px" src="Images/foreign-business-image.png" alt="For Foreign Businesses" title="For Foreign Businesses">
-        <h3>For Foreign Businesses <i class="arrow right" style="text-align:center;"aria-hidden="true"></i></a></h3>
+        <h3>For Foreign Businesses <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h3>
    <ul>
 	  <li><a href="/divisions/business-services/foreign-business/business-basics" target="_blank">Plan for Success</a></li>
 	  <li><a href="/divisions/business-services/foreign-business/register-your-business-in-ri" target="_blank">Register Your Business in Rhode Island</a></li>
@@ -302,7 +227,7 @@
     <div class="small-12 large-4 columns">    
         <div class="brightbluepanel"  data-equalizer-watch="foo">
 			<a href="/divisions/business-services/non-profit/">	   <img style="PADDING-BOTTOM: 10px" src="Images/non-profit-image.png" alt="Rhode Island Non-Profit" title="Rhode Island Non-Profit">
-        <h3>For Non-Profits <i class="arrow right" style="text-align:center;"aria-hidden="true"></i></a></h3>
+        <h3>For Non-Profits <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h3>
       <ul>
 	  <li><a href="/divisions/business-services/non-profit/business-basics/">Plan for Success</a></li>
 	  <li><a href="/divisions/business-services/non-profit/start-a-non-profit-corporation" target="_blank">Start a New Non-Profit</a></li>
@@ -314,63 +239,68 @@
 
 <div class="row">
  <div class="columns large-12 columns">  	 
-<h3 class='content-headers' style="color: black;"><strong>Additional Resources</strong></h3><hr>
+<h3 class='content-headers'style="color:black"><strong>Additional Resources</strong></h3><hr>
 	</div></div>
 
 <div class="row" data-equalizer="foo">
     <!--Chage all the links in this section to point to vote.sos.ri.gov-->
 <div class="columns large-3 columns">    
   <div class="lightgraypanel"  data-equalizer-watch="foo">
-    <h3><a href="https://vote.sos.ri.gov">Rhode Island Business Data Hub <i class="arrow right" style="text-align:center;"aria-hidden="true"></i></a></h3>
+    <h3><a href="https://vote.sos.ri.gov">Rhode Island Business Data Hub <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h3>
    <p>Explore interactive data on the business landscape across the state.</p>
 	
    </div>
  </div>
 
+
 <div class="columns large-3 columns">    
   <div class="lightgraypanel"  data-equalizer-watch="foo">
- <h3><a href="https://vote.sos.ri.gov">Trademarks and Service Marks <i class="arrow right" style="text-align:center;"aria-hidden="true"></i></a></h3>
+ <h3><a href="https://vote.sos.ri.gov">Trademarks and Service Marks <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h3>
    <p>Search our database of trademarks and service marks or learn how to register a new mark.</p>
   </div></div>
 
 <div class="columns large-3 columns">    
   <div class="lightgraypanel"  data-equalizer-watch="foo">
-        <h3><a href="https://vote.sos.ri.gov">Probate Forms <i class="arrow right"style="text-align:center;" aria-hidden="true"></i></a></h3>
+        <h3><a href="https://vote.sos.ri.gov">Probate Forms <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h3>
    <p>Access probate forms issued by the court.</p>
+
+
 </div></div>
+
+
  <div class="columns large-3 columns">    
   <div class="lightgraypanel"  data-equalizer-watch="foo">
-        <h3><a href="https://vote.sos.ri.gov">UCC <i class="arrow right" style="text-align:center;"aria-hidden="true"></i></a></h3>
+        <h3><a href="https://vote.sos.ri.gov">UCC <i class="fa fa-arrow-right" aria-hidden="true"></i></a></h3>
    <p>Search or submit a Uniform Commercial Code filing.</p>
 	 </div></div></div>
-   
-   <div class="row" data-equalizer="foo">	
-     <div class="columns large-4 columns">
-<div class=  "brightbluepanel" data-equalizer-watch="foo">
-	  <h4 class="content-headers" style="color:black"> <strong>Filings</strong> </h4>
+
+	<div class="row" data-equalizer="foo">	
+			 <div class="columns large-4 columns">
+<div class="brightbluepanel" data-equalizer-watch="foo">
+	  <h4 class="content-headers"><strong>Miscellaneous Filings</strong></h4>
 <ul>
   <li><a href="https://docs.sos.ri.gov/DocumentLibrarySearch?d=game_of_chance" target="_blank">Games of Chance</a></li>
    <li> <a href="https://docs.sos.ri.gov/DocumentLibrarySearch?d=nonresident_landlord" target="_blank">Non-Resident Landlord</a></li>
    <li> <a href="https://docs.sos.ri.gov/DocumentLibrarySearch?d=amusement" target="_blank">Non-Resident Owner of Amusements</a></li>
    <li> <a href="https://docs.sos.ri.gov/DocumentLibrarySearch?d=doing_business" target="_blank">Non-Resident Doing Business in RI</a></li>
    <li><a href="https://docs.sos.ri.gov/DocumentLibrarySearch?d= athlete" target="_blank">Athlete Agent Application</a></li>
-  <li>  <a href="https://docs.sos.ri.gov/DocumentLibrarySearch?d= credit_bureau" target="_blank">Registration of a Credit Bureau</a></li>
-  <li><a href="http://www.google.com/search?" target="_blank">Sustainable and Green Entities</a></li>
-
+   <li>  <a href="https://docs.sos.ri.gov/DocumentLibrarySearch?d= credit_bureau" target="_blank">Registration of a Credit Bureau</a></li>
+   <li><a href="http://www.google.com/search?" target="_blank">Sustainable and Green Entities</a></li>
 	</ul>
-</div></div>
+</div>
+</div>
 
 <div class="columns large-4 columns">
 <div class="brightbluepanel" data-equalizer-watch="foo">
 		
-		<h4 class="content-headers" style="color: black;"><strong>Calendar</strong> </h4>
+		<h4 class="content-headers"><strong>Training Calendar</strong></h4>
 	<p>Business Services offers free workshops, summits, and other educational opportunities on a range of topics for small businesses and non-profit organizations. </p>
 	 <p><a href="/divisions/business-services/business-services-training-calendar/" target="_blank">Click here to view the event calendar and sign up today!</a></p>
 </div>
 		</div>
 					 <div class="columns large-4 columns">
 <div class="brightbluepanel" data-equalizer-watch="foo">
-		<h4 class="content-headers" style="color: black;"><strong>Outreach</strong> </h4>
+		<h4 class="content-headers"><strong>Community Outreach</strong></h4>
       <p>Business Services partners with schools, non-profit organizations, financial institutions, business support organizations and community groups to develop trainings and resources, review data, and identify and prepare for new business trends. Are you an entity interested in connecting with us? Please contact our office at 401-222-3040 or <a href="mailto:biztraining@sos.ri.gov">   biztraining@sos.ri.gov.</a></p>
 		
 </div>
@@ -378,9 +308,14 @@
 	</div>
 
 
+
+
+
+
 <div class="row" data-equalizer="foo"></div>
     <div class="large-12 columns">
-<h3 class='content-headers'style="color:black;"><strong>Visit Business Services</strong></h3><hr>
+<h3 class='content-headers' style="color: black;"><strong>Visit Business Services</strong></h3><hr>
+
  <div class="columns large-3 columns">
  <div class="lightgraypanel" data-equalizer-watch="foo">
      <h4 class="content-headers"><font size="3"><strong>CONTACT US</strong></font></h4>
@@ -391,34 +326,28 @@
     <p><span class="fa-stack fa-lg"> <i class="fa fa-circle-thin fa-stack-2x" style="color:rgb(0, 107, 179);"></i> <i class="fa fa-envelope-o fa-stack-1x" style="color:rgb(0, 107, 179);"></i> </span> <a href="mailto:corporations@sos.ri.gov"> corporations@sos.ri.gov</a><br>
 <br>
 	  <strong>PARKING:</strong> Free visitor parking. Use bell tower entrance.
+
+
 </div></div>
 	
-<div class="column large-6 columns">
- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.2847658267337!2d-71.4146298!3d41.8436971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e444e384e5e463%3A0x865c6e8f8f6a0be5!2s148%20W%20River%20St%2C%20Providence%2C%20RI%2002904!5e0!3m2!1sen!2sus!4v1576599614935!5m2!1sen!2sus" 
- width="600" height="370" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+ <div class="columns large-6 columns">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.2847658267337!2d-71.4146298!3d41.8436971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e444e384e5e463%3A0x865c6e8f8f6a0be5!2s148%20W%20River%20St%2C%20Providence%2C%20RI%2002904!5e0!3m2!1sen!2sus!4v1576599614935!5m2!1sen!2sus" width="600" height="370" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
  
 
-
-  <div class="lightgraypanel"data-equalizer-watch="foo"></div>
+<div class="large-3 columns">
+  <div class="lightgraypanel"data-equalizer-watch="foo">
     <h4 class="content-headers"><font size="3"><strong>DISCLAIMER</strong></font></h4>
-<p>The Rhode Island Department of State/Business Services Division cannot provide you with legal advice or legal referrals. 
-  If you are seeking answers to legal questions you will need to find a private attorney. 
-  For information on choosing and working with a lawyer, you may wish to visit the 
-  <a href="https://ribar.com/" target="_blank">Rhode Island Bar Association</a>. </p>
+<p>The Rhode Island Department of State/Business Services Division cannot provide you with legal advice or legal referrals. If you are seeking answers to legal questions you will need to find a private attorney. For information on choosing and working with a lawyer, you may wish to visit the <a href="https://ribar.com/" target="_blank">Rhode Island Bar Association</a>. </p>
 
     <h4 class="content-headers"><font size="3"><strong>FOLLOW US</strong></font></h4>
 
 	  	<div align="left">
-		    <p><span class="fa-stack fa-lg"><a target="_blank" href="https://www.instagram.com/RISecState/"><i class="fa fa-instagram fa-stack-1x" style="color:rgb(0, 107, 179);"></a></i></span> <span class="fa-stack fa-lg"><a target="_blank" 
-          href="https://twitter.com/risecstate"><i class="fa fa-twitter fa-stack-1x" style="color:rgb(0, 107, 179);"></a></i></span> <span class="fa-stack fa-lg"><a target="_blank" href="https://www.facebook.com/RISecState"><i class="fa fa-facebook fa-stack-1x" style="color:rgb(0, 107, 179);"></a></i></span>
+		    <p><span class="fa-stack fa-lg"><a target="_blank" href="https://www.instagram.com/RISecState/"><i class="fa fa-instagram fa-stack-1x" style="color:rgb(0, 107, 179);"></a></i></span> <span class="fa-stack fa-lg"><a target="_blank" href="https://twitter.com/risecstate"><i class="fa fa-twitter fa-stack-1x" style="color:rgb(0, 107, 179);"></a></i></span> <span class="fa-stack fa-lg"><a target="_blank" href="https://www.facebook.com/RISecState"><i class="fa fa-facebook fa-stack-1x" style="color:rgb(0, 107, 179);"></a></i></span>
 	  </a></i></span> <span class="fa-stack fa-lg"><a target="_blank" href="https://www.linkedin.com/company/office-of-the-secretary-of-state-nellie-gorbea"><i class="fa fa-linkedin fa-stack-1x" style="color:rgb(0, 107, 179);"></a></i></span></p></div>
 		
-</div></div>
+</div>
 <div id="footer"><hr>
-  <div class="copyright">2022 © &mu;Sethia Lochard-FrontEndWeb Assignment</div>
+  <div class= "copyright"><strong>2022 © Sethia Lochard FrontEndWeb Assignment</strong></div>
 </div>
 </body>
-</div>
-</div>
 </html>
-
